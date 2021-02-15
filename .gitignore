@@ -36,3 +36,9 @@ terraform.rc
 
 # Lock files
 .terraform.lock.*
+
+# Azure k8s config file
+azurek8s
+
+# Linux swap files
+*.swp
