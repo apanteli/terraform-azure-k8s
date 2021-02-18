@@ -76,6 +76,11 @@ resource "helm_release" "ingress_nginx" {
     value = "true"
   }
 
+  set {
+    name  = "controller.extraArgs.enable-ssl-passthrough"
+    value = ""
+  }
+
   depends_on = [
     local_file.azurek8s
   ]
